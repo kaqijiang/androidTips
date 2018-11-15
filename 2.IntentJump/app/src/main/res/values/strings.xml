@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">2.intentJump</string>
+    <string name="back">返回</string>
+    <string name="explicit">显式跳转</string>
+    <string name="implicit">隐式跳转</string>
+    <string name="implicitCategory">隐式category跳转</string>
+    <string name="activity3">第三个activity</string>
+    <string name="goBrower">跳转浏览器</string>
+    <string name="others">跳转其他</string>
+    <string name="tel">跳转电话</string>
+</resources>
