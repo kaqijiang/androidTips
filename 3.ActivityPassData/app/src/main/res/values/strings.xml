@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ActivityPassData</string>
+    <string name="firstBtn">传值</string>
+    <string name="secondBtn">有传值返回值</string>
+    <string name="back">返回</string>
+
+</resources>
