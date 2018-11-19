@@ -32,7 +32,7 @@
 - 只传递不返回结果
 - 有返回结果同时传值
 - putExtra封装，getExtra封装
-![](2.IntentJump/logicImage.png)
+![](3.ActivityPassData/logicImage.png)
 
 
 
