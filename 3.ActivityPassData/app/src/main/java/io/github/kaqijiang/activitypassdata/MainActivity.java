@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //传值
         firstBtn = findViewById(R.id.firstBtn);
         firstBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //传值且需要返回值
         secondBtn = findViewById(R.id.secondBtn);
         secondBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,16 +61,15 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data)
     {
-        resultTextView = findViewById(R.id.MainActivity_resultTextView);
-        resultTextView.setText(secodeActivity.getExtraString(data));//传输过去，哪里使用key哪里解开key.
-//        if (requestCode != Activity.RESULT_OK)return;//这里判断了下reuqestCode 需要的话可以做对应处理。
+        if (resultCode != Activity.RESULT_OK)return;//这里判断了下resultCode 需要的话可以做对应处理。
 
-//        if (resultCode == RESULT_CODE)//判断是不是secondActivity传过来的。
-//        {
-//            if (data != null)
-//            {
-//                resultTextView.setText(secodeActivity.getExtraString(data));//传输过去，哪里使用key哪里解开key.
-//            }
-//        }
-//    }
+        if (requestCode == RESULT_CODE)//判断是不是secondActivity传过来的。
+        {
+            if (data != null)
+            {
+                resultTextView = findViewById(R.id.MainActivity_resultTextView);
+                resultTextView.setText(secodeActivity.getExtraString(data));//传输过去，哪里使用key哪里解开key.
+            }
+        }
+    }
 }
