@@ -1,5 +1,5 @@
-# androidTips
-安卓项目，慢慢学开发。
+# AndroidProgram权威指南 androidTips
+安卓项目，慢慢学开发。看书过程中，以自己的理解把书上的代码敲一边，加深理解，小本本，烂笔头。
 
 ## 1.Hello Word
 - - - -
